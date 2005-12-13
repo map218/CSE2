@@ -17,6 +17,6 @@ public class WelcomeClass{
         System.out.println("            |-M--A--P--2--1--8-|");
         System.out.println("             \\ /\\ /\\ /\\ /\\ /\\ / ");
         System.out.println("              v  v  v  v  v  v ");
-        System.out.println("Im Matt and I'm a student at Lehigh");
+        System.out.println("Im Matt and I'm a student at Lehigh University");
     }
 }
