@@ -15,9 +15,9 @@ public class ToHex {
         myScanner = new Scanner( System.in );
         System.out.print("Please enter three numbers representing RGB values: ");
         if (myScanner.hasNextInt() == true && myScanner.hasNextInt() == true && myScanner.hasNextInt() == true) {
-            int redValue = myScanner.nextInt();
-            int greenValue = myScanner.nextInt();
-            int blueValue = myScanner.nextInt();
+            int redValue = myScanner.nextInt(); //red as first input
+            int greenValue = myScanner.nextInt(); //green as second input
+            int blueValue = myScanner.nextInt(); //blue is last input
             if (redValue >= 0 && redValue <= 255 && greenValue >= 0 && greenValue <= 255 && blueValue >= 0 && blueValue <= 255) {
                 int firstValue = redValue/16; //calculate first number
                 String firstValueHex; //declare it to use later
@@ -239,7 +239,7 @@ public class ToHex {
                         fourthValueHex = "0";
                         break;
                 }
-                int fifthValue = blueValue/16; //calculate fourth number
+                int fifthValue = blueValue/16; //calculate fifth number
                 String fifthValueHex; //declare it to use later
                 switch (fifthValue) {
                     case 0:
@@ -294,7 +294,7 @@ public class ToHex {
                         fifthValueHex = "0";
                         break;
                 }
-                int sixthValue = blueValue%16; //calculate fourth number
+                int sixthValue = blueValue%16; //calculate sixth number
                 String sixthValueHex; //declare it to use later
                 switch (sixthValue) {
                     case 0:
@@ -351,14 +351,14 @@ public class ToHex {
                 }        
                 System.out.println("The decimal numbers R: "+redValue+" G: "+greenValue+" B: "+blueValue+
                 " is represented in hexadecimal as: "+firstValueHex+secondValueHex+thirdValueHex+fourthValueHex
-                +fifthValueHex+sixthValueHex);
+                +fifthValueHex+sixthValueHex); //print numbers in hexdecimal
             }
             else{
-                System.out.println("Sorry, you must enter numbers between 0 and 255");
+                System.out.println("Sorry, you must enter numbers between 0 and 255"); //tell user they messed up input
             }
         }
         else{
-            System.out.println("Sorry, you must enter 3 integers");
+            System.out.println("Sorry, you must enter 3 integers"); //tell user they messed up input
         }
         
         
