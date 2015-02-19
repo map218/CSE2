@@ -12,7 +12,7 @@
 public class HelloWorld{
     
 //   add main method
-   public static void main(String[] args)  {
+   public static void main(String arg[])  {
        
 //   print out the statement with the box around it
      System.out.println("#########################");
@@ -23,7 +23,8 @@ public class HelloWorld{
      System.out.println("#########################");
      System.out.println("#########################");
      System.out.println("test");
-     
-     //test/testtest
+     boolean wtf ='a' > 'b';
+     System.out.println(wtf);
+
    }
 }
