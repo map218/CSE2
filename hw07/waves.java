@@ -1,6 +1,6 @@
 //Matt Palmieri
-//2/27/15
-//CSE2 lab08
+//3/5/15
+//CSE2 hw07
 //waves
 //practice using nested loops to print out waves of numbers
 
