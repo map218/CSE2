@@ -8,6 +8,7 @@
 //   run the program
 //      java HelloWorld//
 
+import java.util.Scanner;
 //   define a class
 public class HelloWorld{
     
@@ -23,8 +24,28 @@ public class HelloWorld{
      System.out.println("#########################");
      System.out.println("#########################");
      System.out.println("test");
-     boolean wtf ='a' > 'b';
-     System.out.println(wtf);
-
-   }
-}
+    int i = 4;
+    int j = 0;
+    int linenumber = 8;
+    while (j<linenumber){
+        int k = 0;
+        while (k<j){
+            if(k<i){
+                System.out.print(i);
+                k++;
+            }
+            else{
+                int a = 0;
+                while(a<i){
+                    System.out.print(" ");
+                    a++;
+                }
+                System.out.print(i);
+                k++;
+                }
+            }
+            System.out.println("");
+            j++;
+        }
+    }
+    }
